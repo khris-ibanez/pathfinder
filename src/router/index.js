@@ -10,7 +10,8 @@ const routes = [
   { path: '/crear', name: 'crear', component: CreateCharacterView },
   { path: '/guardados', name: 'guardados', component: SavedCharactersView },
   { path: '/razas', name: 'razas-lista', component: RacesListView },          // Lista de razas
-  { path: '/razas/:id', name: 'raza-detalle', component: RacesDetailView } 
+  { path: '/razas/:id', name: 'raza-detalle', component: RacesDetailView },
+  { path: '/:catchAll(.*)', redirect: '/' }
 ]
 
 const router = createRouter({
